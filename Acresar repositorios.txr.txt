@@ -1,0 +1,13 @@
+
+git config --global user.name "Carlos Andres Beltran Franco"
+git config --global user.email "carlosbeltran@ingenieros.com"
+git remote set-url origin https://gitlab.com/carlosandresbf/Acresar_API.git
+
+
+
+
+git config --global user.name "Carlos Andres Beltran Franco"
+git config --global user.email "carlosbeltran@ingenieros.com"
+git remote set-url origin https://gitlab.com/carlosandresbf/Acresar-Front.git
+
+

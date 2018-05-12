@@ -1,0 +1,2781 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Formulario
+      <small>{{modulo}}</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/admin']">
+          <i class="fa fa-dashboard"></i> Inicio</a>
+      </li>
+
+      <li class="active">
+        <a [routerLink]="['/admin/companiasreaseguradoras/reacoex/upload']">{{modulo}}</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title font-header">
+               {{modulo}}
+            </h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            
+
+<div class="content">
+
+<form [formGroup]="f" novalidate>
+
+
+
+
+  <div class="row">
+    <div class="col-sm-4">
+ 
+
+      <input type="file" class="form-control" id="inputFile" name="inputFile"  placeholder="Seleccionar Archivo"  >
+      <input type="hidden" id="typeFileInput" name="typeFileInput"  />
+
+
+
+  </div>
+  </div>
+
+  <div class="row">
+  
+    <div class="col-sm-4 ">
+      <div class="form-group ">
+    <button   type="button" class="btn btn-info margin-left btn-md shadow-box-item">
+Actualizar      <i class="favb fa fa-circle">
+      </i>
+    </button>
+    </div>
+  </div>
+  </div>
+  </form>
+
+  <div class="clearfix"></div>
+  <hr>
+  <div class="clearfix"></div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active">
+      <a href="#reacoexcorredor" aria-controls="reacoexcorredor" role="tab" data-toggle="tab" class=" font-header  font-uppercase">Reacoex Corredor</a>
+    </li>
+    <li role="presentation">
+      <a href="#reacoexreaseguradora" aria-controls="reacoexreaseguradora" role="tab" data-toggle="tab"  class=" font-header font-uppercase">Reacoex Reaseguradora</a>
+    </li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="reacoexcorredor">
+  
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-12 text-center text-upercase">
+            <h4 class="font-header">
+             SUPERINTENDENCIA FINANCIERA DE COLOMBIA
+            <br> DELEGATURA PARA SEGUROS
+            <br> REGISTRO DE REASEGURADORES Y CORREDORES DE REASEGUROS DEL EXTERIOR
+            <br> LISTADO DE REASEGURADORES DEL EXTERIOR
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12  col-md-10 col-md-offset-1">
+
+            <table datatable [dtOptions]="dtOptions" class="hover table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th class="text-center">Corredores</th>
+                  <th class="text-center">Pais</th>
+                  <th class="text-center">Actualización</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AIG GLOBAL REINSURANCE OPERATIONS</td>
+                  <td class="text-center">BELGICA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>ALWEN HOUGH JOHNSON LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2016</td>
+                </tr>
+                <tr>
+                  <td>AON BENFIELD ARGENTINA S.A.</td>
+                  <td class="text-center">ARGENTINA</td>
+                  <td class="text-center">Inscrito 25/08/2017</td>
+                </tr>
+                <tr>
+                  <td>AON UK LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2016</td>
+                </tr>
+                <tr>
+                  <td>ARG GROUP S.A.</td>
+                  <td class="text-center">ARGENTINA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>ARTHUR J. GALLAGHER (UK) LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>ATLANTIC WHOLESALE BROKERS CORREDURIA DE SEGUROS Y REASEGUROS, S.L.</td>
+                  <td class="text-center">ESPAÑA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>BOSTON MARKS INSURANCE BROKERS LTD ( Antes BOSTON MARKS INSURANCE BROKERS (LONDON) LIMITED)</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>BGI BERTIL GRIMME AG INSURANCE BROKERS</td>
+                  <td class="text-center">SUIZA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>BUTCHER ROBINSON & STAPLES INTERNATIONAL LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>COLEMONT INSURANCE BROKERS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">SUSPENDIDO</td>
+                </tr>
+                <tr>
+                  <td>COLOMBIAN INSURANCE BROKING WHOLESALE LIMITED (antes HEATHCOL LIMITED)</td>
+                  <td class="text-center">ISLAS CAIMAN</td>
+                  <td class="text-center">CANCELADO</td>
+                </tr>
+                <tr>
+                  <td>COMBINED INTERMEDIARIO DE REASEGURO S.A.</td>
+                  <td class="text-center">ECUADOR</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>CONO SUR RE CORREDORES DE REASEGUROS LTDA (Antes CONO SUR RE CORREDORES DE REASEGUROS S.A.)</td>
+                  <td class="text-center">CHILE</td>
+                  <td class="text-center">Actualizado 2016</td>
+                </tr>
+                <tr>
+                  <td>COOPER GAY CO LTD</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2015</td>
+                </tr>
+                <tr>
+                  <td>COOPER GAY ECUADOR C.A. INTERMEDIARIO DE REASEGUROS</td>
+                  <td class="text-center">ECUADOR</td>
+                  <td class="text-center">CANCELADO</td>
+                </tr>
+                <tr>
+                  <td>DASHWOOD BREWER & PHIPPS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2014</td>
+                </tr>
+                <tr>
+                  <td>EURO AMERICAN RE ECUADOR C.A. INTERMEDIARIO DE REASEGUROS</td>
+                  <td class="text-center">ECUADOR</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>FIRST REINSURANCE SERVICE CORP</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>GLOBAL REINSURANCE BROKERS INC.</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>HOWDEN INSURANCE BROKERS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2013</td>
+                </tr>
+                <tr>
+                  <td>HOWDEN UK GROUP LIMITED antes (RK HARRISON GROUP LIMITED (LONDRES))</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>H.W. WOOD LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2015</td>
+                </tr>
+                <tr>
+                  <td>INSYNC REINSURANCE INTERMEDIARIES, INC</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">CANCELADO </td>
+                </tr>
+                <tr>
+                  <td>INTEGRO INSURANCE BROKERS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>INTERNATIONAL REINSURANCE BROKERS SOLUTIONS, LLC (INTERBROS)</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>INTREPID INSURANCE BROKERS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>IRIS DEL ECUADOR S.A.</td>
+                  <td class="text-center">ECUADOR</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>JLT COLOMBIA WHOLESALE LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>JLT REINSURANCE BROKERS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>JLT SPECIALTY LIMITED ( AntesJARDINE LLOYD THOMPSON LIMITED)</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>JOHN L. WORTHAM & Son L.P.</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2015</td>
+                </tr>
+                <tr>
+                  <td>LENIX REINSURANCE INTERMEDIARIES, LLC</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>LUCY A. RAYMOND & SONS LIMITED</td>
+                  <td class="text-center">REINO UNIDO</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>LOCKTON COMPANIES LLP</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>LLOYD & PARTNERS LTD</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>MALAKUT REINSURANCE BROKERS</td>
+                  <td class="text-center">PANAMÁ</td>
+                  <td class="text-center">Actualizado 2016</td>
+                </tr>
+                <tr>
+                  <td>MANNING WILLIAMS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">SUSPENDIDO</td>
+                </tr>
+                <tr>
+                  <td>MARSH LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>MEXBRIT LLC (antes MEXBRIT INC.)</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>MILENIUMRE INTERMEDIARIO DE REASEGUROS S.A.</td>
+                  <td class="text-center">ECUADOR</td>
+                  <td class="text-center">Inscrito 01/08/2017</td>
+                </tr>
+                <tr>
+                  <td>MILLER INSURANCE SERVICES LLP</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>OLSA REASEGUROS, ASESORES Y CORREDORES DE REASEGUROS S.A.</td>
+                  <td class="text-center">PERÚ</td>
+                  <td class="text-center">Actualizado 2015</td>
+                </tr>
+                <tr>
+                  <td>PRICE FORBES & PARTNERS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>PWS AMERICAS LLC</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">SUSPENDIDO</td>
+                </tr>
+                <tr>
+                  <td>REASINTER INTERMEDIARIO DE REASEGURO, S.A. de C.V.</td>
+                  <td class="text-center">MÉXICO</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>REGAL RE SOCIEDAD DE CORRETAJE DE REASEGUROS C.A.</td>
+                  <td class="text-center">VENEZUELA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>RFIB GROUP LIMITED antes Robert Fleming</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2012</td>
+                </tr>
+                <tr>
+                  <td>RISK MANAGEMENT</td>
+                  <td class="text-center">FRANCIA</td>
+                  <td class="text-center">Actualizado 2015</td>
+                </tr>
+                <tr>
+                  <td>RKH SPECIALTY MIAMI LLC (antes HOWDEN INSURANCE, LLC.)</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>SWISS BROKERS MÉXICO, INTERMEDIARIO DE REASEGUROS S.A. DE C.V.</td>
+                  <td class="text-center">MÉXICO</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>THOMPSON HEATH & BOND LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>TYSER & CO. LTD.</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2018</td>
+                </tr>
+                <tr>
+                  <td>UNITED INSURANCE BROKERS LIMITED</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2016</td>
+                </tr>
+                <tr>
+                  <td>WILLIS LIMITED- (WILLIS FABER AND DUMAS LIMITED)</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>WILLIS RE INC.- (WILLIS FABER NORTH AMERICAN)</td>
+                  <td class="text-center">U.S.A.</td>
+                  <td class="text-center">Actualizado 2017</td>
+                </tr>
+                <tr>
+                  <td>WINDSOR PARTNERS LIMITED (antes WINDSOR INSURANCE BROKERS LIMITED)</td>
+                  <td class="text-center">INGLATERRA</td>
+                  <td class="text-center">CANCELADO</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th class="text-center">Corredores</th>
+                  <th class="text-center">Pais</th>
+                  <th class="text-center">Actualización</th>
+                </tr>
+              </tfoot>
+            </table>
+
+            </div>
+            </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12  col-md-10 col-md-offset-1">
+         
+            <button type="button" class="btn btn-info margin-left btn-md shadow-box-item">
+              Agregar Nuevo
+              <i class="favb fa fa-circle">
+              </i>
+            </button> <br><br>
+            </div></div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="reacoexreaseguradora">
+      
+      <div class="content">
+        <div class="row">
+          <div class="col-sm-12 text-center text-upercase">
+            <h4 class="font-header">
+              SUPERINTENDENCIA FINANCIERA DE COLOMBIA
+              <br> DELEGATURA PARA SEGUROS
+              <br> REGISTRO DE REASEGURADORES Y CORREDORES DE REASEGUROS DEL EXTERIOR
+              <br> LISTADO DE REASEGURADORES DEL EXTERIOR
+            </h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12  col-md-10 col-md-offset-1">
+      
+          <table datatable [dtOptions]="dtOptions" class="hover table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th class="text-center" rowspan="2">Corredores</th>
+                <th class="text-center" rowspan="2">Pais</th>
+                <th class="text-center" colspan="4"> Calificación</th>
+                <th class="text-center" rowspan="2"> OR</th>
+                <th class="text-center" rowspan="2">Actualización</th>
+              </tr>
+              <tr>
+                <th class="text-center">1</th>
+                <th class="text-center"> 2</th>
+                <th class="text-center">3</th>
+                <th class="text-center">4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td width="397">ACE AMERICAN INSURANCE COMPANY </td>
+                <td width="96">U.S.A.</td>
+                <td width="80">AA</td>
+                <td width="80">&nbsp;</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">ACE BERMUDA INTERNATIONAL INSURANCE (IRELAND) LIMITED</td>
+                <td width="96">IRLANDA</td>
+                <td>&nbsp;</td>
+                <td>A++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2015</td>
+              </tr>
+              <tr>
+                <td>ACE INA OVERSEAS INSURANCE COMPANY LIMITED</td>
+                <td>BERMUDA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ACE PROPERTY &amp; CASUALITY INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AFIANZADORA ASERTA, S.A. DE C.V., GRUPO FINANCIERO ASERTA </td>
+                <td>MÉXICO</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AFIANZADORA INSURGENTES, S.A. DE C.V., GRUPO FINANCIERO ASERTA </td>
+                <td>MÉXICO</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AGCS MARINE INSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">AIG EUROPE LIMITED (Antes CHARTIS EUROPE LIMITED) </td>
+                <td width="96">INGLATERRA</td>
+                <td width="80">A+</td>
+                <td width="80">&nbsp;</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td width="397">AIG SEGUROS MEXICO (Antes CHARTIS SEGUROS MEXICO)</td>
+                <td width="96">MÉXICO</td>
+                <td width="80">A+</td>
+                <td width="80">&nbsp;</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2014</td>
+              </tr>
+              <tr>
+                <td>ALLIANZ GLOBAL RISK US INSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ALLIANZ GLOBAL CORPORATE &amp; SPECIALTY SE (Antes  ALLIANZ GLOBAL CORPORATE &amp; SPECIALTY ) </td>
+                <td>ALEMANIA</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ALLIANZ GLOBAL CORPORATE &amp; SPECIALTY RESSEGUROS BRASIL S.A.</td>
+                <td>BRASIL</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ALLIANZ MEXICO, S.A. COMPAÑÍA DE SEGUROS</td>
+                <td>MÉXICO</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ALLIANZ RISK TRANSFER AG</td>
+                <td>LIECHTENSTEIN</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ALLIANZ SE</td>
+                <td>ALEMANIA</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ALLIED WORLD INSURANCE COMPANY (antes ALLIED WORLD REINSURANCE COMPANY)</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ALTERRA REINSURANCE  EUROPE PUBLIC LIMITED COMPANY (Antes ALTERRA REINSURANCE EUROPE LIMITED)</td>
+                <td>IRLANDA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2013</td>
+              </tr>
+              <tr>
+                <td>AMERICAN BANKERS INSURANCE COMPANY OF FLORIDA</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AMERICAN HOME ASSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>AMERICAN INTERNATIONAL OVERSEAS LIMITED ( antes CHARTIS OVERSEAS LIMITED)</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>AMERICAN LIFE INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>A1</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AMLIN INSURANCE SE</td>
+                <td>INGLATERRA</td>
+                <td>A </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>AMTRUST EUROPE LIMITED </td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ARCH INSURANCE COMPANY (EUROPE) LTD</td>
+                <td>REINO UNIDO</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td width="397">ARCH  REINSURANCE EUROPE UNDERWRITING DESIGNATED ACTIVITY COMPANY (antes ARCH REINSURANCE EUROPE UNDERWRITING LIMITED)</td>
+                <td width="96">IRLANDA</td>
+                <td width="80">A+</td>
+                <td width="80">&nbsp;</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ARCH REINSURANCE LTD</td>
+                <td>BERMUDA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td width="113">Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ASPEN INSURANCE UK LIMITED antes (WELLINGTON REINSURANCE LIMITED)</td>
+                <td>REINO UNIDO</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ASSA COMPAÑÍA DE SEGUROS S.A. </td>
+                <td>PANAMÁ</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ASSICURAZIONI GENERALI S.P.A.</td>
+                <td>ITALIA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ATRADIUS REINSURANCE DESIGNATED ACTIVITY COMPANY antes (ATRADIUS REINSURANCE LIMITED) </td>
+                <td>IRLANDA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AUSTRAL  RESSEGURADORA S.A.</td>
+                <td>BRASIL</td>
+                <td>&nbsp;</td>
+                <td>B++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AVIABEL CIE. BELGE D'ASSURANCE AVIATION S.A.</td>
+                <td>BÉLGICA</td>
+                <td>A</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AVIVA INSURANCE LIMITED</td>
+                <td>ESCOCIA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AXA CORPORATE SOLUTIONS ASSURANCE</td>
+                <td>FRANCIA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AXA CORPORATE SOLUTIONS BRASIL E AMERICA LATINA RESSEGUROS S.A.</td>
+                <td>BRASIL</td>
+                <td>&nbsp;</td>
+                <td>B++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>AXA FRANCE IARD</td>
+                <td>FRANCIA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AXA FRANCE VIE</td>
+                <td>FRANCIA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AXA GLOBAL P&amp;C </td>
+                <td>FRANCIA</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>AXIS RE SE</td>
+                <td>IRLANDA</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>BARENTS RE REINSURANCE COMPANY INC</td>
+                <td>PANAMÁ</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>BERKLEY INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>BERKSHIRE HATHAWAY INTERNATIONAL INSURANCE LIMITED</td>
+                <td>INGLATERRA</td>
+                <td width="80">AA+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>BEST MERIDIAN INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>BF&amp;M LIFE INSURANCE COMPANY LIMITED</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2015</td>
+              </tr>
+              <tr>
+                <td>BLACK GOLD RE LIMITED</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>BBB</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>BTG PACTUAL RESSEGURADORA S.A.</td>
+                <td>BRASIL</td>
+                <td>&nbsp;</td>
+                <td>B+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>BUPA INSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>BBB+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CARDIF ASSURANCE VIE </td>
+                <td>FRANCIA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CASIOPEA RE S.A.</td>
+                <td>LUXEMBURGO</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>CATLIN INSURANCE COMPANY (UK)  LTD</td>
+                <td>INGLATERRA</td>
+                <td>A+</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CATLIN INSURANCE COMPANY LIMITED</td>
+                <td>BERMUDA</td>
+                <td>A </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2014</td>
+              </tr>
+              <tr>
+                <td>CATLIN RE SWITZERLAND LTD. </td>
+                <td>SUIZA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CBL INSURANCE LIMITED (antes CONTRACTORS BONDING LIMITED) </td>
+                <td>NUEVA ZELANDA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CHUBB EUROPEAN GROUP LIMITED antes ACE EUROPEAN GROUP LIMITED </td>
+                <td>REINO UNIDO</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CHUBB TEMPEST REINSURANCE LTD (Antes ACE TEMPEST REINSURANCE COMPANY LIMITED)</td>
+                <td>BERMUDA</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CITADEL REINSURANCE COMPANY LIMITED</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CMFG LIFE INSURANCE COMPANY ( Antes  CUNA MUTUAL INSURANCE SOCIETY)</td>
+                <td width="96">U.S.A.</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td width="397">CNA INSURANCE COMPANY LIMITED</td>
+                <td width="96">INGLATERRA</td>
+                <td width="80">A</td>
+                <td width="80">&nbsp;</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>COLINA INSURANCE COMPANY LIMITED</td>
+                <td>BAHAMAS</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>COMPAGNIE FRANCAISE D'ASSURANCE POUR LE COMERSE EXTERIEUR (COFACE)</td>
+                <td>FRANCIA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>A2</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>COMPAÑÍA INTERNACIONAL DE SEGUROS  S.A.  </td>
+                <td>PANAMÁ</td>
+                <td>&nbsp;</td>
+                <td>A </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">COMPAÑÍA ESPAÑOLA DE SEGURO DE CRÉDITO A LA EXPORTACIÓN SOCIEDAD ANÓNIMA DE SEGURO Y REASEGURO -CESCE</td>
+                <td>ESPAÑA</td>
+                <td>BBB+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>COMPAÑÍA SUIZA DE REASEGUROS S.A. (SWISS REINSURANCE COMPANY LTD.)</td>
+                <td>SUIZA</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>CONTINENTAL CASUALTY COMPANY</td>
+                <td>U.S.A.</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ECHO RÜCKVERSICHERUNGS – AG (ECHO REISURANCE LIMITED) </td>
+                <td>SUIZA</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>EL PACIFICO PERUANO SUIZA COMPAÑÍA DE SEGUROS Y REASEGUROS</td>
+                <td>PERÚ</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ENDURANCE ASSURANCE CORPORATION (antes ENDURANCE REINSURANCE CORPORATION OF AMERICA)</td>
+                <td>U.S.A.</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ENDURANCE SPECIALTY INSURANCE LIMITED</td>
+                <td>BERMUDA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>        </td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ENDURANCE WORLDWIDE INSURANCE LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>EQUATOR REINSURANCES LIMITED </td>
+                <td>BERMUDA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>EULER HERMES DEUTSCHLAND AG antes (EULER HERMES KREDITVERSICHERUNGS AKTIENGESELLCHAFT (HERMES))</td>
+                <td>ALEMANIA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>EULER HERMES REINSURANCE A.G. </td>
+                <td>SUIZA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>EURASIA INSURANCE COMPANY JSC</td>
+                <td>KAZAKHSTAN</td>
+                <td>&nbsp;</td>
+                <td>B++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 27/03/2014</td>
+              </tr>
+              <tr>
+                <td>EVEREST REINSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>EXPORT DEVELOPMENT CANADA </td>
+                <td>CANADA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Aaa</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>FACTORY MUTUAL INSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>FEDERAL INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>FINANCIAL ASSURANCE COMPANY LIMITED (UK)</td>
+                <td>REINO UNIDO</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>FINANCIAL INSURANCE COMPANY LIMITED (UK)</td>
+                <td>REINO UNIDO</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>FIREMAN'S FUND INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>FM  INSURANCE COMPANY LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>CANCELADO</td>
+              </tr>
+              <tr>
+                <td width="397">GENERAL REINSURANCE AG (ALEMANIA) ( ANTES KÖELNISCHE RÜECKVERSICHERUNGS-GESELLSCHAFT AG )</td>
+                <td width="96">ALEMANIA</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A++</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>GENERAL REINSURANCE CORPORATION</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>GENERAL INSURANCE CORPORATION OF INDIA</td>
+                <td>INDIA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>GENERALI  ITALIA S.p.A </td>
+                <td>ITALIA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>GENERALI ESPAÑA S.A. DE SEGUROS Y REASEGUROS</td>
+                <td>ESPAÑA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>GENERALI RÜCKVERSICHERUNG AKTIENGESELLSCHAFT </td>
+                <td>AUSTRIA</td>
+                <td>BBB</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2015</td>
+              </tr>
+              <tr>
+                <td>GERLING-KONZERN ALLGEMEINE VERSICHERUNGS-AKTIENGESELLSCHAFT</td>
+                <td>ALEMANIA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>GREAT AMERICAN INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>GREAT LAKES REINSURANCE (UK) PLC</td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>GREAT MIDWEST INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>GREENLIGHT REINSURANCE LTD</td>
+                <td>ISLAS CAIMÁN</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 15/09/2015</td>
+              </tr>
+              <tr>
+                <td>HANNOVER RE (BERMUDA) LIMITED</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A +</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>HANNOVER RÜCK SE  (antes  HANNOVER RÜCKVERSICHERUNG AG.)</td>
+                <td>ALEMANIA</td>
+                <td>AA- </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>HCC INTERNATIONAL INSURANCE COMPANY PLC</td>
+                <td>INGLATERRA</td>
+                <td>AA -</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>HEDDINGTON INSURANCE LIMITED</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2014</td>
+              </tr>
+              <tr>
+                <td>HELVETIA SWISS INSURANCE COMPANY LTD </td>
+                <td>SUIZA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>HDI GLOBAL SE  (antes HDI-GERLING INDUSTRIE VERSICHERUNG AG)</td>
+                <td>ALEMANIA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>HDI GLOBAL NETWORK AG  (antes HDI-GERLING  WELT SERVICES AG)</td>
+                <td>ALEMANIA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>HOUSTON CASUALTY COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>HOUSTON SPECIALTY INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>HSB ENGINEERING INSURANCE LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>INRECO INTERNATIONAL REINSURANCE COMPANY </td>
+                <td>ISLAS CAIMÁN</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>INSTITUTO NACIONAL DE SEGUROS</td>
+                <td>COSTA RICA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>INTERNATIONAL GENERAL INSURANCE CO. LTD.</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>INTERNATIONAL GENERAL INSURANCE COMPANY (UK) LTD</td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">INTERNATIONAL INSURANCE COMPANY OF HANNOVER SE (Antes INTERNATIONAL INSURANCE COMPANY OF HANNOVER LIMITED)</td>
+                <td>ALEMANIA</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>IRB BRASIL RESSEGUROS S.A.</td>
+                <td>BRASIL</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>IRONSHORE EUROPE DESIGNATED ACTIVITY COMPANY (Antes IRONSHORE EUROPE LIMITED) </td>
+                <td>IRLANDA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>IRONSHORE INSURANCE LTD</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>IRONSHORE SPECIALTY INSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>Au</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>J. MALUCELLI RESSEGURADORA S.A.</td>
+                <td>BRASIL</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">JOHN HANCOCK LIFE INSURANCE COMPANY (Antes JOHN HANCOCK MUTUAL LIFE INSURANCE COMPANY )</td>
+                <td width="96">U.S.A.</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A+</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>KOREAN REINSURANCE COMPANY LIMITED</td>
+                <td>COREA DEL SUR</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>LA BALOISE COMPAÑIA DE SEGUROS (BASLER VERS. GES. AG)</td>
+                <td>SUIZA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>LANCASHIRE INSURANCE COMPANY LIMITED</td>
+                <td>BERMUDA</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>LANCASHIRE INSURANCE COMPANY (UK) LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>LIBERTY MUTUAL INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>LIBERTY MUTUAL INSURANCE EUROPE LIMITED</td>
+                <td>REINO UNIDO</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>LLOYD'S UNDERWRITERS</td>
+                <td>INGLATERRA</td>
+                <td>A+</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>LONDON LIFE AND CASUALTY REINSURANCE CORPORATION </td>
+                <td>BARBADOS</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>CANCELADO</td>
+              </tr>
+              <tr>
+                <td>LONDON LIFE REINSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>MAPFRE ASISTENCIA COMPAÑÍA INTERNATIONAL DE SEGUROS Y REASEGUROS S.A. </td>
+                <td>ESPAÑA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>A3</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">MAPFRE GLOBAL RISKS, COMPAÑÍA INTERNATIONAL DE SEGUROS Y REASEGUROS (antes MAPFRE EMPRESAS COMPAÑÍA DE SEGUROS Y REASEGUROS)</td>
+                <td width="96">ESPAÑA</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td width="397">MAPFRE PANAMÁ S.A.</td>
+                <td>PANAMÁ</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>MAPFRE RE COMPAÑIA DE REASEGUROS S.A. </td>
+                <td>ESPAÑA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>MARKEL EUROPE PUBLIC LIMITED COMPANY (antes ALTERRA EUROPE PUBLIC LIMITED COMPANY)</td>
+                <td>IRLANDA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2014</td>
+              </tr>
+              <tr>
+                <td>MARKEL INTERNATIONAL INSURANCE  COMPANY LIMITED (Antes TERRA NOVA)</td>
+                <td>INGLATERRA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>MAX BERMUDA LTD. (antes MAX RE LTD)</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>CANCELADO</td>
+              </tr>
+              <tr>
+                <td>MAXSEGUROS EPM LTD.</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>METLIFE INSURANCE COMPANY USA</td>
+                <td>U.S.A.</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrita 19/06/2015</td>
+              </tr>
+              <tr>
+                <td>MILLI REASURANS T.A.S </td>
+                <td>TURQUÍA</td>
+                <td>&nbsp;</td>
+                <td>B+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>MITSUI SUMITOMO INSURANCE COMPANY (EUROPE) LIMITED </td>
+                <td>INGLATERRA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>MITSUI SUMITOMO INSURANCE COMPANY LIMITED antes (SUMITOMO MARINE) </td>
+                <td>JAPON</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>MOTORS INSURANCE CORPORATION</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>CANCELADO</td>
+              </tr>
+              <tr>
+                <td>MS AMLIN AG (  antes AMLIN AG ) </td>
+                <td>SUIZA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>A1</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>MUNCHENER RUCKVERSICHERUNGS-GESELLSCHAFT</td>
+                <td>ALEMANIA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>NATIONALE BORG REINSURANCE N.V</td>
+                <td>CURAZAO</td>
+                <td>A-</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>NATIONAL UNION FIRE INSURANCE COMPANY OF PITTSBURGH, PA</td>
+                <td>U.S.A.</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>NAVIGATORS INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>NEW HAMPSHIRE INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>NOVA CASIOPEA RE S.A. </td>
+                <td>LUXEMBURGO</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 18/01/2018</td>
+              </tr>
+              <tr>
+                <td>N.V. NATIONALE BORG MAATSCHASPPIJ</td>
+                <td>HOLANDA</td>
+                <td>A-</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>OAO SOGAZ</td>
+                <td>RUSIA</td>
+                <td>&nbsp;</td>
+                <td>B++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 13/03/2014</td>
+              </tr>
+              <tr>
+                <td width="397">ODYSSEY REINSURANCE COMPANY  ( Antes ODYSSEY AMERICA REINSURANCE CORPORATION </td>
+                <td width="96">U.S.A.</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>OFFICE NATIONAL DU DUCROIRE NATIONALE DELCREDEREDIENST (&quot;ONDD&quot;) </td>
+                <td>BÉLGICA</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>OPEN JOINT - STOCK INSURANCE COMPANY - INGOSSTRAKH </td>
+                <td>RUSIA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>PAN AMERICAN LIFE INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td width="397">PARTNERRE AMERICA INSURANCE COMPANY(Antes Paris RE America Insurance Company)</td>
+                <td width="96">U.S.A.</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>PARTNER REINSURANCE COMPANY LIMITED</td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td width="80">A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">PARTNER REINSURANCE EUROPE SE ( Antes PARTNER REINSURANCE EUROPE PUBLIC LIMITED COMPANY) </td>
+                <td width="96">IRLANDA</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>POZAVAROVALNICA TRIGLAV RE, d.d</td>
+                <td>ESLOVENIA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 10/08/2017</td>
+              </tr>
+              <tr>
+                <td>PROTECCIÓN AGROPECUARIA, COMPAÑÍA DE SEGUROS, S.A.</td>
+                <td>MÉXICO </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>BBB-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td>QATAR INSURANCE COMPANY</td>
+                <td>QATAR</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td width="397">QATAR REINSURANCE COMPANY LIMITED (Antes QATAR REINSURANCE COMPANY LLC) </td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>QBE INSURANCE (EUROPE) LIMITED (Antes QBE INTERNATIONAL INSURANCE LIMITED)</td>
+                <td>INGLATERRA</td>
+                <td width="80">A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>QBE RE (EUROPE) LIMITED</td>
+                <td>INGLATERRA</td>
+                <td width="80">A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>QBE REINSURANCE CORPORATION - (antes SYDNEY) </td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>R+V VERSICHERUNG AG (antes R+V VERSICHERUNG AG RÜCKVERSICHERUNG-REINSURANCE)</td>
+                <td>ALEMANIA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>REASEGURADORA PATRIA S.A. ( Antes REASEGURADORA PATRIA S.A.B.)</td>
+                <td>MÉXICO</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>REVIOS RÜCKVERSICHERUNG AG   antes (GMBH)</td>
+                <td>ALEMANIA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>RIMAC SEGUROS Y REASEGUROS</td>
+                <td>PERÚ</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>BBB</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>RGA REINSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ROYAL &amp; SUN ALLIANCE INSURANCE PLC </td>
+                <td>INGLATERRA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ROYAL &amp; SUN ALLIANCE REINSURANCE LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>SAMSUNG FIRE &amp; MARINE INSURANCE COMPANY LTD</td>
+                <td>COREA DEL SUR</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SANTA LUCÍA S.A., COMPAÑÍA DE SEGUROS Y REASEGUROS </td>
+                <td>ESPAÑA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 26/10/2017</td>
+              </tr>
+              <tr>
+                <td>SAVA REINSURANCE COMPANY </td>
+                <td>ESLOVENIA</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>SCHWEIZERISCHE NATIONAL VERSICHERUNGS- GESELLSCHAFT AG</td>
+                <td>SUIZA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2014</td>
+              </tr>
+              <tr>
+                <td>SCOR SE (antes SCOR)</td>
+                <td>FRANCIA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SCOR GLOBAL P&amp;C SE</td>
+                <td>FRANCIA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SCOR GLOBAL LIFE SE</td>
+                <td>FRANCIA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SCOR GLOBAL LIFE AMERICAS REINSURANCE COMPANY  (antes SCOR GLOBAL LIFE U.S. RE INSURANCE COMPANY)</td>
+                <td>U.S.A.</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SCOR REINSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SCOR SWITZERLAND LTD.     (antes CONVERIUM LIMITED)</td>
+                <td>SUIZA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SCOR UK COMPANY LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SEGUROS INBURSA S.A.</td>
+                <td>MÉXICO</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td width="89">BBB+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SEOUL GUARANTEE INSURANCE COMPANY</td>
+                <td>COREA DEL SUR</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td width="89">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>SIGNAL IDUNA REINSURANCE LTD</td>
+                <td>SUIZA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td width="397">SIRIUS AMERICA INSURANCE COMPANY  (ANTES WHITE MOUNTAINS REINSURANCE COMPANY OF AMERICA)</td>
+                <td width="96">U.S.A.</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td width="397">SIRIUS BERMUDA INSURANCE COMPANY LTD </td>
+                <td width="96">BERMUDA </td>
+                <td width="80">&nbsp;</td>
+                <td width="80">A</td>
+                <td width="89">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="80">&nbsp;</td>
+                <td width="113">Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>SIRIUS INTERNACIONAL INSURANCE CORPORATION</td>
+                <td>SUECIA</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SOLUNION SEGUROS DE CRÉDITO, COMPAÑÍA INTERNACIONAL DE SEGUROS Y REASEGUROS, S.A. </td>
+                <td>ESPAÑA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>STARR INDEMNITY &amp; LIABILITY COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>STARR INSURANCE &amp; REINSURANCE LIMITED </td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>STARSTONE INSURANCE EUROPE AG (Antes TORUS INSURANCE (EUROPE) AG)</td>
+                <td>LIECHTENSTEIN</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>STARR INTERNATIONAL (EUROPE) LIMITED</td>
+                <td>LONDRES</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 17/11/2017</td>
+              </tr>
+              <tr>
+                <td>STARSTONE INSURANCE SE (Antes STARSTONE INSURANCE LIMITED) </td>
+                <td>LIECHTENSTEIN</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>STEIN INSURANCE COMPANY LIMITED</td>
+                <td>GUERNSEY</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2015</td>
+              </tr>
+              <tr>
+                <td>S.T. PAUL FIRE AND MARINE INSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>AA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2014</td>
+              </tr>
+              <tr>
+                <td>SUNDERLAND MARINE INSURANCE COMPANY LIMITED antes (SUNDERLAND MARINE MUTUAL INSURANCE COMPANY LIMITED)</td>
+                <td>REINO UNIDO</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>SWISS RE EUROPE S.A.</td>
+                <td>LUXEMBURGO</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SWISS RE INTERNATIONAL S.E. antes (SR INTERNATIONAL BUSINESS INSURANCE COMPANY LIMITED)</td>
+                <td>LUXEMBURGO</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SWISS REINSURANCE AMERICA CORPORATION </td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>SWISS RE CORPORATE SOLUTIONS LTD</td>
+                <td>SUIZA</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TERRA BRASIS RESSEGUROS S.A. </td>
+                <td>BRASIL</td>
+                <td>&nbsp;</td>
+                <td>B++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>THE COPENHAGEN REINSURANCE COMPANY LTD.</td>
+                <td>DINAMARCA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>THE GRANITE STATE INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>THE INSURANCE COMPANY OF STATE OF PENNSYLVANIA</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>SUSPENDIDO</td>
+              </tr>
+              <tr>
+                <td>THE NEW INDIA ASSURANCE COMPANY LIMITED</td>
+                <td>INDIA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>THE SHIPOWNERS´ MUTUAL PROTECTION &amp; INDEMNITY ASSOCIATION </td>
+                <td>LUXEMBURGO</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>THE UNITED KINGDOM MUTUAL STEAM SHIP ASSURANCE ASSOCIATION (EUROPE) LIMITED</td>
+                <td>REINO UNIDO</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TOKIO MARINE AND NICHIDO FIRE INSURANCE COMPANY LIMITED</td>
+                <td>JAPON</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TOKIO MARINE KILN INSURANCE LTD (Antes  TOKIO MARINE EUROPE INSURANCE LIMITED)</td>
+                <td>INGLATERRA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TOKIO MILLENNIUM RE AG </td>
+                <td>SUIZA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TRANS OCEANIC LIFE INSURANCE COMPANY</td>
+                <td>PUERTO RICO</td>
+                <td>&nbsp;</td>
+                <td>B++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TRANS RE ZURICH</td>
+                <td>SUIZA</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>TRANSATLANTIC REINSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2016</td>
+              </tr>
+              <tr>
+                <td>TRAVELERS CASUALTY AND SURETY COMPANY OF AMERICA </td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TRAVELERS INDEMNITY COMPANY</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TRAVELERS INSURANCE COMPANY LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>TRAVELERS PROPERTY CASUALTY COMPANY OF AMERICA</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A++</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>TT CLUB MUTUAL INSURANCE LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>UNITED INSURANCE COMPANY </td>
+                <td>ISLAS CAIMÁN</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>VALIDUS REINSURANCE (SWITZERLAND) LTD</td>
+                <td>SUIZA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>VHV ALLGEMEINE VERSICHERUNG AG</td>
+                <td>ALEMANIA</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>VIRGINIA SURETY COMPANY, INC.</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>WESTPORT INSURANCE CORPORATION</td>
+                <td>U.S.A.</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>W.R. BERKLEY EUROPE AG</td>
+                <td>LIECHTENSTEIN</td>
+                <td>&nbsp;</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Inscrito 11/04/2017</td>
+              </tr>
+              <tr>
+                <td>W.R. BERKLEY INSURANCE (EUROPE) LIMITED</td>
+                <td>INGLATERRA</td>
+                <td>&nbsp;</td>
+                <td>A</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>XL INSURANCE COMPANY SE (Antes XL INSURANCE COMPANY PLC )</td>
+                <td>REINO UNIDO</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>X</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>XL RE LATIN  AMERICA AG (Antes XL RE LATIN AMERICA LTD.) </td>
+                <td>ZURICH</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>XL RE LTD. </td>
+                <td>BERMUDA</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>CANCELADO</td>
+              </tr>
+              <tr>
+                <td>XL SPECIALTY INSURANCE COMPANY</td>
+                <td>U.S.A.</td>
+                <td>A+</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2017</td>
+              </tr>
+              <tr>
+                <td>ZURICH AMERICAN INSURANCE COMPANY </td>
+                <td>U.S.A.</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2015</td>
+              </tr>
+              <tr>
+                <td>ZURICH INSURANCE COMPANY LTD</td>
+                <td>SUIZA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+              <tr>
+                <td>ZURICH INSURANCE PUBLIC LIMITED COMPANY antes (ZURICH INSURANCE IRELAND LIMITED)</td>
+                <td>IRLANDA</td>
+                <td>AA-</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>Actualizado 2018</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th class="text-center" rowspan="2">Corredores</th>
+                <th class="text-center" rowspan="2">Pais</th>
+                <th class="text-center">1</th>
+                <th class="text-center">2</th>
+                <th class="text-center">3</th>
+                <th class="text-center">4</th>
+                <th class="text-center" rowspan="2"> OR</th>
+                <th class="text-center" rowspan="2">Actualización</th>
+              </tr>
+              <tr>
+                <th colspan="4" class="text-center">Calificación</th>
+              </tr>
+            </tfoot>
+          </table>
+           
+          </div>
+          </div>
+        </div>
+<div class="row">
+  <div class="col-sm-12  col-md-10 col-md-offset-1">
+<button type="button" class="btn btn-info margin-left btn-md shadow-box-item">
+  Agregar Nuevo
+  <i class="favb fa fa-circle">
+  </i>
+</button><br>
+<br>
+</div>
+</div>
+
+    </div>
+  </div>
+
+
+  <br><br>
+<button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+  Regresar <i class="favb fa fa-circle"></i></button> 
+
+
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+
+         
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+
+  <!-- /.content -->
+</div>

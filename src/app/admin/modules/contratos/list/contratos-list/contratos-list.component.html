@@ -1,0 +1,385 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Listado
+      <small>{{modulo}}</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/admin']">
+          <i class="fa fa-dashboard"></i> Inicio</a>
+      </li>
+
+      <li class="active">
+        <a [routerLink]="['/admin/contratos']">{{modulo}}</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+        
+<div class="row">
+  <div class="col-sm-12 col-md-12">
+ 
+  <nav id="mymenu">
+    <label for="tm" id="toggle-menu">Menu
+      <span class="drop-icon">▾</span>
+    </label>
+    <input type="checkbox" id="tm">
+    <ul class="main-menu cf">
+      <li>
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#myModal" title="Nuevo Contrato "  class="btn-info shadow-box-item">
+          <i class="fa fa-file-o"></i>
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/admin/contratos/automaticos/list']" class="btn-info shadow-box-item">Automáticos
+          <span class="fa fav fa-circle"></span>
+          <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+        </a>
+        <input type="checkbox" id="sm1">
+        <ul class="sub-menu ">
+          <li>
+            <a  [routerLink]="['/admin/contratos/automaticos/proporcionales/list']">Proporcionales
+              <label title="Toggle Drop-down" class="drop-icon" for="sm2"> &nbsp; &nbsp;</label>
+            </a>
+            <input type="checkbox" id="sm2">
+            <ul class="sub-menu fix-sub">
+              <li>
+                <a  [routerLink]="['/admin/contratos/automaticos/proporcionales/cuota-aparte']" >Cuota Parte
+                </a>
+              </li>
+             
+            </ul>
+          </li>
+       
+        </ul>
+      </li>
+     
+            <li class="f-right">
+              <a href="javascript:void(0)" onclick="history.go(-1)" class="btn-info shadow-box-item">Regresar
+                <span class="fav fa fa-circle"> </span>
+              </a>
+            </li>
+    </ul>
+  </nav>
+    <!-- NAV BAR -->
+</div>
+</div>
+
+
+
+
+       
+           
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="table-responsive">
+
+
+              <table datatable [dtOptions]="dtOptions" class="row-border hover">
+                <thead>
+                  <tr>
+                    <th>Contrato.</th>
+                    <th>Nombre</th>
+                    <th>Fecha Inicio</th>
+                    <th>Fecha Termino</th>
+                    <th>Moneda</th>
+                    <th>Tipo Contrato</th>
+                    <th>Corredor</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+              
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+              
+                  <tr>
+                    <td>5</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+              
+                  <tr>
+                    <td>6</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+              
+                  <tr>
+                    <td>7</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+              
+                  <tr>
+                    <td>8</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+              
+                  <tr>
+                    <td>9</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. </td>
+                    <td>2015-07-15</td>
+                    <td>2018-07-15</td>
+                    <td>Dolar</td>
+                    <td>Laudantium consequuntur </td>
+                    <td>laborum ratione velit molestias</td>
+                    <td>
+                      <a [routerLink]="['/admin/contratos/new']">
+                        <i class="fa fa-edit cursor btn-header cursor_active"></i>
+                      </a>
+                      <i class="fa fa-trash cursor btn-header cursor_active"></i>
+                    </td>
+                  </tr>
+              
+              
+                </tbody>
+              </table>
+
+
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+
+        <div class="box-footer clearfix">
+            <a [routerLink]="['/admin']">
+              <button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+                Regresar
+                <i class="favb fa fa-circle"></i>
+              </button>
+            </a> 
+        </div>
+        <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+  </section>
+
+
+  <!-- /.content -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel">Registrar Contrato</h4>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">A&ntilde;o Contractual</label>
+                <input type="text" class="form-control" id="calendar">
+              
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="inputEmail4">Tipo de contrato</label>
+                <select class="form-control">
+                  <option selected="" value="Selección">Selección</option>
+                  <option value="Cuota Parte">Cuota Parte</option>
+                  <option value="Excedente">Excedente</option>
+                  <option value="Facultativo">
+                    FACOB</option>
+                  <option value="Facultativo">Facultativo</option>
+                  <option value="operativo WXL">operativo WXL</option>
+                  <option value="Catastrofico XL">Catastrofico XL</option>
+                  <option value="Stop Loss">Stop Loss</option>
+                  <option value="Facultativo">
+                    Tent Plan</option>
+                  <option value="Retención">Retención</option>
+                    <option value="Retención">Facultativo</option>
+                      <option value="Retención">Facultativo NP</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">ID</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="ID Contrato ">
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>

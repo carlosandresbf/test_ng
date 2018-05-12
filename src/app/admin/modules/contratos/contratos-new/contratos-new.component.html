@@ -1,0 +1,146 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Forumulario
+      <small>{{modulo}}</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/admin']">
+          <i class="fa fa-dashboard"></i> Inicio</a>
+      </li>
+
+      <li class="active">
+        <a [routerLink]="['/admin/contratos/new']">{{modulo}}</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title">
+              {{modulo}}
+            </h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="table-responsive">
+
+
+
+              <div class="content">
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">A&ntilde;o</label>
+                        <select class="form-control">
+                          <option>2018</option>
+                          <option>2017</option>
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Identificación del contrato</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Identificación del contrato">
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Descripción</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Descripción">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Tipo Contrato</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Tipo Contrato">
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Observaciones</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Observaciones">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Vigencia del contrato</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Vigencia">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Cuenta</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Cuenta">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Moneda</label>
+                        <select class="form-control">
+                          <option>Pesos</option>
+                          <option>Dolar</option>
+                          <option>Euro</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+              
+                  <a [routerLink]="['/admin']">
+                    <button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+                      Regresar
+                      <i class="favb fa fa-circle"></i>
+                    </button>
+                  </a>
+
+                </form>
+              </div>
+
+
+
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+
+  <!-- /.content -->
+</div>

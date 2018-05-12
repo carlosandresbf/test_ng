@@ -1,0 +1,826 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Formulario
+      <small>{{modulo}}</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/admin']">
+          <i class="fa fa-dashboard"></i> Inicio</a>
+      </li>
+
+      <li class="active">
+        <a [routerLink]="['/admin/companiasreaseguradoras/aseguradoras/upload']">{{modulo}}</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title font-header">
+              {{modulo}}
+            </h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+
+
+            <div class="content">
+
+              <form>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="form-group ">
+                      <input type="file" class="form-control" id="inputFile" placeholder="Seleccionar Archivo">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-sm-4 ">
+                    <div class="form-group ">
+                      <button type="button" class="btn btn-info margin-left btn-md shadow-box-item">
+                        Actualizar
+                        <i class="favb fa fa-circle">
+                        </i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="clearfix"></div>
+              <hr>
+              <div class="clearfix"></div>
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#generales" aria-controls="generales" role="tab" data-toggle="tab" class=" font-header  font-uppercase">Seguros Generales</a>
+                </li>
+                <li role="presentation">
+                  <a href="#vida" aria-controls="vida" role="tab" data-toggle="tab" class=" font-header font-uppercase">Seguros de Vida</a>
+                </li>
+            
+                  <li role="presentation">
+                    <a href="#exterior" aria-controls="exterior" role="tab" data-toggle="tab" class=" font-header font-uppercase">Sociedades Cooperativas De Seguros</a>
+                  </li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="generales">
+
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-sm-12 text-center text-upercase">
+                        <h4 class="font-header">
+                           ENTIDADES VIGILADAS POR LA SUPERINTENDENCIA FINANCIERA DE COLOMBIA
+                          <br> COMPAÑÍAS DE SEGUROS GENERALES
+                          <br> REPRESENTANTES LEGALES PRINCIPALES - DIRECCIONES - TELÉFONOS FAX - EMAIL - NOVEDADES**
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12  col-md-10 col-md-offset-1">
+
+                        <table datatable [dtOptions]="dtOptions" class="hover table table-striped table-bordered">
+                          <thead>
+                          <tr>
+                            <td rowspan="2" width="41">Tipo</td>
+                            <td rowspan="2" width="63">Código</td>
+                            <td rowspan="2" width="548">Denominación social de la Entidad</td>
+                            <td rowspan="2" width="119">NIT</td>
+                            <td align="center" width="194">Representante Legal</td>
+                            <td width="194">&nbsp;</td>
+                            <td rowspan="2" width="163">Cargo</td>
+                            <td rowspan="2" width="387">Dirección</td>
+                            <td rowspan="2" width="157">Domicilio</td>
+                          </tr>
+                          <tr>
+                            <td>Nombre (s)</td>
+                            <td>Apellido (s)</td>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">1</td>
+                            <td width="548">Allianz Seguros S.A.</td>
+                            <td width="119">860026182-5</td>
+                            <td width="194">Ignacio José del CJ Valentín</td>
+                            <td width="194">Borja Noboa</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 13A No. 29 - 24/26 Piso 19</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">5</td>
+                            <td width="548">Ace Seguros S.A. </td>
+                            <td width="119">860026518-6</td>
+                            <td width="194">Rosario del Pilar</td>
+                            <td width="194">Lozano Sarmiento</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Calle 72 No. 10 - 51 Pisos 6, 7 y 8</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">6</td>
+                            <td width="548">Seguros Colpatria S.A.</td>
+                            <td width="119">860002184-6</td>
+                            <td width="194">Fernando</td>
+                            <td width="194">Quintero Arturo</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 7 No. 24 - 89 Pisos 4 y 7 (Torre Colpatria)</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">7</td>
+                            <td width="548">ECO Seguros S.A.</td>
+                            <td width="119">860002527-9</td>
+                            <td width="194">Olga Lucia </td>
+                            <td width="194">Cañas Arías</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Transversal 19A No. 98 - 12, Of. 701</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">8</td>
+                            <td width="548">Compañía Aseguradora de Fianzas S.A., Confianza Sigla: Confianza S.A.</td>
+                            <td width="119">860070374-9</td>
+                            <td width="194">Luis Alejandro </td>
+                            <td width="194">Rueda Rodríguez</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Calle 82 No. 11 - 37 Piso 7</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">9</td>
+                            <td width="548">QBE Seguros S.A. podrá usar las siglas QBE Colombia o QBE Seguros</td>
+                            <td width="119">860002534-0</td>
+                            <td width="194">Nicolas</td>
+                            <td width="194">Delgado González</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 7 No. 76 - 35 Pisos 1, 7, 8 y 9</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">14</td>
+                            <td width="548">Generali Colombia-Seguros Generales S.A. Sigla: GENERALI COLOMBIA</td>
+                            <td width="119">860004875-6</td>
+                            <td width="194">Eduardo</td>
+                            <td width="194">Sarmiento Pulido</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 7 No. 72 - 13 Piso 8</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">15</td>
+                            <td width="548">Royal &amp; Sun Alliance Seguros (Colombia) S.A. Abreviatura: &quot;RSA&quot;</td>
+                            <td width="119">860002505-7</td>
+                            <td width="194">Lilian</td>
+                            <td width="194">Perea Ronco</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Avenida 19 No. 104 - 37 </td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">17</td>
+                            <td width="548">Compañía Mundial de Seguros S.A.  Sigla: MUNDIAL SEGUROS</td>
+                            <td width="119">860037013-6</td>
+                            <td width="194">Juan Enrique</td>
+                            <td width="194">Bustamante Molina</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Calle 33 No. 6B - 24 Pisos 2 y 3</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">18</td>
+                            <td width="548">Seguros Generales Suramericana S.A.</td>
+                            <td width="119">890903407-9</td>
+                            <td width="194">Gonzalo Alberto</td>
+                            <td width="194">Pérez Rojas</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 64B No. 49A - 30</td>
+                            <td width="157">Medellín (Antioquia)</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">21</td>
+                            <td width="548">Chubb de Colombia Compañía de Seguros S.A.</td>
+                            <td width="119">860034520-5</td>
+                            <td width="194">Manuel Francisco</td>
+                            <td width="194">Obregón Trillos</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Avda. Calle 26 No. 59 - 51 Torre 3, Piso 7</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">22</td>
+                            <td width="548">AIG Seguros Colombia S.A.  Sigla: AIG Seguros ó AIG Colombia ó AIG</td>
+                            <td width="119">860037707-9</td>
+                            <td width="194">Alexander </td>
+                            <td width="194">Montoya Gutiérrez</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Calle 78 No. 9 - 57 Pisos 1, 4, 5 y 6</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">24</td>
+                            <td width="548">La Previsora S.A. Compañía de Seguros</td>
+                            <td width="119">860002400-2</td>
+                            <td width="194">José Alejandro</td>
+                            <td width="194">Samper Carreño</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Calle 57 No. 9 - 07</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">25</td>
+                            <td width="548">Seguros Alfa S.A.</td>
+                            <td width="119">860031979-8</td>
+                            <td width="194">Roberto</td>
+                            <td width="194">Vergara Ortíz</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Avda. Calle 24 A No. 59 - 42, Torre 4, Pisos 4 y 5     Atención al Cliente y Correspondencia:        Avda. Calle 26 No.
+                              59 - 15 Local 6 y 7</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">26</td>
+                            <td width="548">Mapfre Seguros Generales de Colombia S.A.
+                              <br /> Sigla: MAPFRE SEGUROS</td>
+                            <td width="119">891700037-9</td>
+                            <td width="194">Raúl</td>
+                            <td width="194">Fernández Maseda</td>
+                            <td width="163">Presidente Ejecutivo</td>
+                            <td width="387">Carrera 14 No. 96 - 34</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">27</td>
+                            <td width="548">Seguros Comerciales Bolívar S.A.</td>
+                            <td width="119">860002180-7</td>
+                            <td width="194">Jorge Enrique de Jesús</td>
+                            <td width="194">Uribe Montaño</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Avenida El Dorado No. 68B - 31 Piso 10</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">29</td>
+                            <td width="548">Seguros del Estado S.A.</td>
+                            <td width="119">860009578-6</td>
+                            <td width="194">Jorge Arturo</td>
+                            <td width="194">Mora Sánchez </td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 11 No. 90 - 20</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">30</td>
+                            <td width="548">Segurexpo de Colombia S.A. Aseguradora de Crédito y del Comercio Exterior. Denominación simple de SEGUREXPO</td>
+                            <td width="119">860009195-9</td>
+                            <td width="194">Jesús</td>
+                            <td width="194">Urdangaray López</td>
+                            <td width="163">Gerente  General</td>
+                            <td width="387">Calle 72 No. 6 - 44 Piso  12</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">33</td>
+                            <td width="548">Liberty Seguros S.A., pudiendo utilizar comercialmente Liberty Seguros o Liberty</td>
+                            <td width="119">860039988-0</td>
+                            <td width="194">Mauricio Arturo</td>
+                            <td width="194">García Ortíz </td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Calle 72 No.10 - 07 y                                 Calle 71 No.10-08 Pisos 1,6,7 y 8</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">41</td>
+                            <td width="548">BBVA Seguros Colombia S.A. Pudiendo utilizar indistintamente, para todos los efectos legales, el nombre BBVA Seguros</td>
+                            <td width="119">800226098-4</td>
+                            <td width="194">Sandra Patricia </td>
+                            <td width="194">Solórsano Daza</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 15 No. 95 - 65 Edificio Astoria Piso 6</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">42</td>
+                            <td width="548">Mapfre Seguros de Crédito S.A. &quot; Mapfre-Crediseguro S.A.&quot; y Podrá identificarse con la sigla Mapfre-Crediseguro
+                              S.A. </td>
+                            <td width="119">811019190-7</td>
+                            <td width="194">Alejandro Miguel</td>
+                            <td width="194">Santamaría Caicedo</td>
+                            <td width="163">Gerente  General</td>
+                            <td width="387">Carrera 7 Sur No. 42 - 70</td>
+                            <td width="157">Medellín (Antioquia)</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">44</td>
+                            <td width="548">Cardif Colombia Seguros Generales S.A.</td>
+                            <td width="119">900200435-3</td>
+                            <td width="194">Jorge Enrique </td>
+                            <td width="194">Hernández Rodríguez</td>
+                            <td width="163">Presidente</td>
+                            <td width="387">Carrera 7a No. 75 - 66 </td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">45</td>
+                            <td width="548">Cardinal Compañía de Seguros S.A.  sigla CARDINAL SEGUROS</td>
+                            <td width="119">900488151-3</td>
+                            <td width="194">José Miguel</td>
+                            <td width="194"> Otoya Grueso</td>
+                            <td width="163">Presidente Ejecutivo</td>
+                            <td width="387">Calle 98 No. 21 - 50 Oficina 901</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          <tr>
+                            <td width="41">13</td>
+                            <td width="63">46</td>
+                            <td width="548">Coface Colombia Seguros de Crédito S.A.</td>
+                            <td width="119">&nbsp;</td>
+                            <td width="194">&nbsp;</td>
+                            <td width="194">&nbsp;</td>
+                            <td width="163">&nbsp;</td>
+                            <td width="387">&nbsp;</td>
+                            <td width="157">Bogotá D.C.</td>
+                          </tr>
+                          </tbody>
+                        
+                        </table>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-12  col-md-10 col-md-offset-1">
+
+                      <button type="button" class="btn btn-info margin-left btn-md shadow-box-item">
+                        Agregar Nuevo
+                        <i class="favb fa fa-circle">
+                        </i>
+                      </button>
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane fade in " id="vida">
+                
+                  <div class="content">
+                    <div class="row">
+                      <div class="col-sm-12 text-center text-upercase">
+                        <h4 class="font-header">
+                          ENTIDADES VIGILADAS POR LA SUPERINTENDENCIA FINANCIERA DE COLOMBIA
+                          <br> COMPAÑÍAS DE SEGUROS DE VIDA
+                          <br> REPRESENTANTES LEGALES PRINCIPALES - DIRECCIONES - TELÉFONOS FAX - EMAIL - NOVEDADES**
+                        </h4>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12  col-md-10 col-md-offset-1">
+                
+                        <table datatable [dtOptions]="dtOptions" class="hover table table-striped table-bordered">
+                          <thead>
+                              <tr>
+                                <td rowspan="2" width="44">Tipo</td>
+                                <td rowspan="2" width="52">Cógio</td>
+                                <td rowspan="2" width="548">Denominación social de la Entidad</td>
+                                <td rowspan="2" width="123">NIT</td>
+                                <td align="center" width="194">Representante Legal</td>
+                                <td width="194">&nbsp;</td>
+                                <td rowspan="2" width="196">Cargo</td>
+                                <td rowspan="2" width="391">Dirección</td>
+                                <td rowspan="2" width="157">Domicilio</td>
+                              </tr>
+                              <tr>
+                                <td>Nombre (s)</td>
+                                <td>Apellido (s)</td>
+                              </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">1</td>
+                              <td width="548">Allianz Seguros de Vida S.A.</td>
+                              <td width="123">860027404-1</td>
+                              <td width="194">Ignacio José del CJ Valentín</td>
+                              <td width="194">Borja Noboa</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 13A No. 29 - 24/26 Piso 19</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">4</td>
+                              <td width="548">Seguros de Vida Colpatria S.A.</td>
+                              <td width="123">860002183-9</td>
+                              <td width="194">Fernando</td>
+                              <td width="194">Quintero Arturo</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 7 No. 24 - 89 Pisos 4 y 7 (Torre Colpatria)</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">7</td>
+                              <td width="548">Compañía de Seguros Bolívar S.A.  Denominación &quot;SEGUROS BOLÍVAR S.A.&quot;.</td>
+                              <td width="123">860002503-2</td>
+                              <td width="194">Jorge Enrique de Jesús</td>
+                              <td width="194">Uribe Montaño</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Avenida El Dorado No. 68B - 31 Piso 10</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">8</td>
+                              <td width="548">Compañía de Seguros de Vida Aurora S.A.</td>
+                              <td width="123">860022137-5</td>
+                              <td width="194">Luis</td>
+                              <td width="194">Zaraza Carrillo</td>
+                              <td width="196">Presidente ( E )</td>
+                              <td width="391">Carrera 9 No. 70 - 69</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">9</td>
+                              <td width="548">Skandia Compañía de Seguros de Vida S.A.</td>
+                              <td width="123">860002504-1</td>
+                              <td width="194">Daniel</td>
+                              <td width="194">Cortes MC Allister</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Avenida 19 No.113 - 30</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">10</td>
+                              <td width="548">Generali Colombia Vida Compañía de Seguros S.A.
+                                <br /> Sigla: GENERALI VIDA</td>
+                              <td width="123">860010170-7</td>
+                              <td width="194">Eduardo</td>
+                              <td width="194">Sarmiento Pulido</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 7 No. 72 - 13 Piso 8</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">11</td>
+                              <td width="548">Seguros de Vida Suramericana S.A.</td>
+                              <td width="123">890903790-5</td>
+                              <td width="194">Gonzalo Alberto</td>
+                              <td width="194">Pérez Rojas</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 64B No. 49A - 30</td>
+                              <td width="157">Medellín (Antioquia)</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">13</td>
+                              <td width="548">Metlife Colombia Seguros de Vida S.A. Siglas: &quot;METLIFE COLOMBIA S.A</td>
+                              <td width="123">860002398-5</td>
+                              <td width="194">Jesús Santiago</td>
+                              <td width="194">Osorio Falla</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 7 No. 99 - 53 Piso 17</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">16</td>
+                              <td width="548">Pan American Life de Colombia Compañía de Seguros S.A.</td>
+                              <td width="123">860038299-1</td>
+                              <td width="194">Juan Pablo</td>
+                              <td width="194">Luque Luque</td>
+                              <td width="196">Gerente General  </td>
+                              <td width="391">Carrera 7 No. 75 - 09</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">17</td>
+                              <td width="548">Seguros de Vida Alfa S.A. Vidalfa S.A.</td>
+                              <td width="123">860503617-3</td>
+                              <td width="194">Roberto</td>
+                              <td width="194">Vergara Ortíz</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Avda. Calle 24 A No. 59 - 42, Torre 4. Pisos 4 y 5.  Atención al Cliente - Correspondencia:             Avda. Calle 26
+                                No. 59 - 15 Local 6 y 7</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">18</td>
+                              <td width="548">Liberty Seguros de Vida S.A., pudiendo utilizar comercialmente Liberty Seguros o Liberty</td>
+                              <td width="123">860008645-7</td>
+                              <td width="194">Mauricio Arturo</td>
+                              <td width="194">García Ortíz </td>
+                              <td width="196">Presidente </td>
+                              <td width="391">Calle 72 No.10-07 y                         Calle 71 No.10-08 Pisos 1,6,7 y 8</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">19</td>
+                              <td width="548">Seguros de Vida del Estado S.A.</td>
+                              <td width="123">860009174-4</td>
+                              <td width="194">Jorge Arturo</td>
+                              <td width="194">Mora Sánchez </td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 11 No. 90 - 20</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">20</td>
+                              <td width="548">Global  Seguros de Vida S.A. Sigla GLOBAL SEGUROS</td>
+                              <td width="123">860002182-1</td>
+                              <td width="194">Rodrigo                      </td>
+                              <td width="194">Uribe Bernal</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 9 No 74 - 62 </td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">23</td>
+                              <td width="548">Positiva  Compañía de Seguros S.A.</td>
+                              <td width="123">860011153-6</td>
+                              <td width="194">Álvaro Hernán </td>
+                              <td width="194">Vélez Millán</td>
+                              <td width="196">Presidente </td>
+                              <td width="391">Avenida Carrera 45 (autopista norte) No. 94-72</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">25</td>
+                              <td width="548">Compañía de Seguros de Vida Colmena S.A., pero también podrá actuar bajo las denominaciones &quot;COLMENA COMPAÑIA DE SEGUROS
+                                DE VIDA S.A&quot;. o &quot;RIESGOS PROFESIONALES COLMENA S.A. COMPAÑIA DE SEGUROS DE VIDA&quot; y bajo las siguientes
+                                siglas &quot;COLMENA VIDA Y RIESGOS PROFESIONALES&quot; o &quot;COLMENA VIDA&quot; o&quot;RIESGOS PROFESIONALES COLMENA&quot;
+                                o &quot;ARP COLMENA&quot; o &quot;COLMENA RIESGOS PROFESIONALES&quot; o &quot;COLMENA ARTP&quot;</td>
+                              <td width="123">800226175-3</td>
+                              <td width="194">Myriam Claret</td>
+                              <td width="194">Dueñas Mesa</td>
+                              <td width="196">Presidente ( E )</td>
+                              <td width="391">Avenida El Dorado No. 69C - 03 Torre A Pisos 5, 6 y 9</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">26</td>
+                              <td width="548">BBVA Seguros de Vida Colombia S.A. pudiendo utilizar indistintamente, para todos los efectos legales, el nombre BBVA Seguros
+                                de Vida </td>
+                              <td width="123">800240882-0</td>
+                              <td width="194">Sandra Patricia </td>
+                              <td width="194">Solórsano Daza</td>
+                              <td width="196">Presidente</td>
+                              <td width="391">Carrera 15 No. 95 - 65 Edificio Astoria Pisos 5 y 6</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">28</td>
+                              <td width="548">Seguros de Riesgos Laborales Suramericana S.A. Sigla &quot;ARL Sura&quot;</td>
+                              <td width="123">800256161-9</td>
+                              <td width="194">Iván Ignacio</td>
+                              <td width="194">Zuluaga Latorre</td>
+                              <td width="196">Gerente General</td>
+                              <td width="391">Calle 49A No. 63 - 55 Centro Suramericana Torre Suratep</td>
+                              <td width="157">Medellín (Antioquia)</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">29</td>
+                              <td width="548">La Equidad Seguros de Vida Organismo Cooperativo, la cual podrá identificarse también con la denominación altarnativa La
+                                Equidad Seguros de Vida-</td>
+                              <td width="123">830008686-1</td>
+                              <td width="194">Carlos Augusto</td>
+                              <td width="194">Villa Rendón</td>
+                              <td width="196">Presidente Ejecutivo </td>
+                              <td width="391">Carrera 9A No. 99 - 07 Piso 13 Edificio 100 Street Torre Equidad</td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                            <tr>
+                              <td width="44">14</td>
+                              <td width="52">30</td>
+                              <td width="548">Mapfre Colombia Vida Seguros S.A.</td>
+                              <td width="123">830054904-6</td>
+                              <td width="194">Raúl</td>
+                              <td width="194">Fernández Maseda</td>
+                              <td width="196">Presidente Ejecutivo</td>
+                              <td width="391">Carrera 14 No. 96 - 34 </td>
+                              <td width="157">Bogotá D.C.</td>
+                            </tr>
+                          </tbody>
+                
+                        </table>
+                
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <div class="col-sm-12  col-md-10 col-md-offset-1">
+                
+                      <button type="button" class="btn btn-info margin-left btn-md shadow-box-item">
+                        Agregar Nuevo
+                        <i class="favb fa fa-circle">
+                        </i>
+                      </button>
+                      <br>
+                      <br>
+                    </div>
+                  </div>
+                
+                </div>
+
+
+
+      
+
+
+                    <div role="tabpanel" class="tab-pane fade in " id="exterior">
+                    
+                      <div class="content">
+                        <div class="row">
+                          <div class="col-sm-12 text-center text-upercase">
+                            <h4 class="font-header">
+                              ENTIDADES VIGILADAS POR LA SUPERINTENDENCIA FINANCIERA DE COLOMBIA
+                              <br> SOCIEDADES COOPERATIVAS DE SEGUROS
+                              <br> REPRESENTANTES LEGALES PRINCIPALES - DIRECCIONES - TELÉFONOS FAX - EMAIL - NOVEDADES**
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-12  col-md-10 col-md-offset-1">
+                    
+                          <table datatable [dtOptions]="dtOptions" class="hover table table-striped table-bordered">
+                            <thead>
+                              <tr>
+                                <th rowspan="2" width="45">Tipo</th>
+                                <th rowspan="2" width="73">Código</th>
+                                <th rowspan="2" width="548">Denominación social de la Entidad</th>
+                                <th rowspan="2" width="123">NIT</th>
+                                <th colspan="2" align="center">Representante Legal</th>
+                                <th rowspan="2" width="110">Cargo</th>
+                                <th rowspan="2" width="250">Dirección</th>
+                                <th rowspan="2" width="157">Domicilio</th>
+                                <th rowspan="2" width="173">Teléfono</th>
+                              </tr>
+                          
+                              <tr>
+                                <th>Nombre (s)</th>
+                                <th>Apellido (s)</th>
+                              </tr>
+                            </thead>
+                            <tr>
+                              <td width="45">
+                                <a name="RANGE!A7:I9">15</a>
+                              </td>
+                              <td width="73">1</td>
+                              <td width="548">La Equidad Seguros Generales Organismo Cooperativo . Denominación simplificada &quot;LA EQUIDAD SEGUROS GENERALES&quot;</td>
+                              <td width="123">860028415-5</td>
+                              <td width="167">Carlos Augusto </td>
+                              <td width="156">Villa Rendón</td>
+                              <td width="110">Presidente Ejecutivo </td>
+                              <td width="250">Carrera 9A No. 99 - 07 Piso 13 Edificio 100 Street Torre Equidad</td>
+                              <td width="157">Bogotá D.C.</td>
+                              <td width="173">5922929 - 5922910</td>
+                            </tr>
+                            <tr>
+                              <td width="45">15</td>
+                              <td width="73">2</td>
+                              <td width="548">Aseguradora Solidaria de Colombia Ltda. Entidad Cooperativa </td>
+                              <td width="123">860524654-6</td>
+                              <td width="167">Carlos Arturo</td>
+                              <td width="156">Guzmán Pelaez</td>
+                              <td width="110">Presidente </td>
+                              <td width="250">Calle 100 No.9 A - 45 Pisos 8 y 12</td>
+                              <td width="157">Bogotá D.C.</td>
+                              <td width="173">(051)6214330 /6464330</td>
+                            </tr>
+                            <tr>
+                              <td width="45">&nbsp;</td>
+                              <td width="73">&nbsp;</td>
+                              <td width="548">&nbsp;</td>
+                              <td width="123">&nbsp;</td>
+                              <td width="167">&nbsp;</td>
+                              <td width="156">&nbsp;</td>
+                              <td width="110">&nbsp;</td>
+                              <td width="250">&nbsp;</td>
+                              <td width="157">&nbsp;</td>
+                              <td width="173">&nbsp;</td>
+                            </tr>
+                          
+                            <tfoot>
+                              <tr>
+                                <th rowspan="2" width="45">Tipo</th>
+                                <th rowspan="2" width="73">Código</th>
+                                <th rowspan="2" width="548">Denominación social de la Entidad</th>
+                                <th rowspan="2" width="123">NIT</th>
+                                <th colspan="2" align="center">Representante Legal</th>
+                                <th rowspan="2" width="110">Cargo</th>
+                                <th rowspan="2" width="250">Dirección</th>
+                                <th rowspan="2" width="157">Domicilio</th>
+                                <th rowspan="2" width="173">Teléfono</th>
+                              </tr>
+                              <tr>
+                                <th>Nombre (s)</th>
+                                <th>Apellido (s)</th>
+                              </tr>
+                            </tfoot>
+                          </table>
+
+                    
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="row">
+                        <div class="col-sm-12  col-md-10 col-md-offset-1">
+                    
+                          <button type="button" class="btn btn-info margin-left btn-md shadow-box-item">
+                            Agregar Nuevo
+                            <i class="favb fa fa-circle">
+                            </i>
+                          </button>
+                          <br>
+                          <br>
+                        </div>
+                      </div>
+                    
+                    </div>
+
+
+
+
+              </div>
+
+
+              <br>
+              <br>
+              <button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+                Regresar
+                <i class="favb fa fa-circle"></i>
+              </button>
+
+
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+
+
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+
+  <!-- /.content -->
+</div>

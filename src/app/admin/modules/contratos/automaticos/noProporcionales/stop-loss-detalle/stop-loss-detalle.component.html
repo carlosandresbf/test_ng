@@ -1,0 +1,508 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Forumulario
+      <small>{{modulo}}</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/admin']">
+          <i class="fa fa-dashboard"></i> Inicio</a>
+      </li>
+
+      <li class="active">
+        <a [routerLink]="['admin/contratos/automaticos/noproporcionales/stoploss/detalle']">{{modulo}}</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title">
+              {{modulo}}
+            </h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="table-responsive">
+
+
+
+              <div class="content">
+                <form>
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Corredor</label>
+                        <select class="form-control">
+                          <option>Sin broker</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Reasegurador</label>
+                        <select class="form-control">
+                          <option>Selección</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Tipo de Limite</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Tipo de Limite" data-toggle="modal" data-target="#myModal">
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Prioridad</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Prioridad">
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Tipo de Tasa</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Tipo de Tasa" data-toggle="modal" data-target="#myModal2">
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Costo</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Costo">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">MINDEP</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="MINDEP" data-toggle="modal" data-target="#myModal3">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Estado de Primas</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Estimado de Primas">
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Rol</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Rol">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Factor de Ajuste</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Factor de Ajuste">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">% Participación Utilidades</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="% Participación Utilidades">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">% Bonos por no Reclamación</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="% Bonos por no Reclamación">
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                  <button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+                    Regresar
+                    <i class="favb fa fa-circle"></i>
+                  </button>
+                  <button type="button" class="btn btn-info margin-left btn-md shadow-box-item" data-toggle="modal" data-target="#myModal">
+                    Guardar
+                    <i class="favb fa fa-circle">
+                    </i>
+                  </button>
+
+                  <button type="button" class="btn btn-info margin-left btn-md shadow-box-item" data-toggle="modal" data-target="#myModal2">
+                    Agregar
+                    <i class="favb fa fa-circle">
+                    </i>
+                  </button>
+
+                  <button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+                    Cancelar
+                    <i class="favb fa fa-circle"></i>
+                  </button>
+
+                </form>
+              </div>
+
+
+
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+  </section>
+
+
+  <!-- /.content -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel">Tipo Limite</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Limite Anual
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <input>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  Reinstalamientos
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+
+                <table class="table hoverTable text-center">
+                  <thead>
+                    <tr>
+                      <th>CAPA</th>
+                      <th>TIEMPO</th>
+                      <th>PRORRATA</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input class="input-phantom"></td>
+                      <td><input class="input-phantom"></td>
+                      <td>
+                          <input class="input-phantom"></td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel2">Tipo de Tasa</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne1" aria-expanded="false" aria-controls="collapseOne">
+                  Fija
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+
+                <table class="table hoverTable text-center">
+                  <thead>
+                    <tr>
+                      <th>CAPA</th>
+                      <th>%</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    <td>
+                      <input class="input-phantom">
+                    </td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo1" aria-expanded="false"
+                  aria-controls="collapseTwo1">
+                  Variable
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+
+                <table class="table hoverTable text-center">
+                  <thead>
+                    <tr>
+                      <th>CAPA</th>
+                      <th>%</th>
+                      <th>MIN</th>
+                      <th>MAX</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> 1</td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> 2</td>
+                    <td>
+                      <input class="input-phantom">
+                    </td>
+                    <td>
+                      <input class="input-phantom">
+                    </td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td> 3</td>
+                    <td>
+                      <input class="input-phantom">
+                    </td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+                    <td>
+                      <input class="input-phantom">
+                    </td>
+                    </tr>
+
+                    <tr>
+                      <td> 4</td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+                    <td>
+                      <input class="input-phantom">
+                    </td>
+                      <td>
+                        <input class="input-phantom">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel3">MINDEP</h4>
+      </div>
+      <div class="modal-body">
+
+        <table class="table hoverTable text-center">
+          <thead>
+            <tr>
+              <th>No Pago</th>
+              <th>Fecha Pago</th>
+              <th>Moneda</th>
+              <th>Importe</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td> 1</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td> 2</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <td> 3</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+              <td> 4</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="row">
+          <div class="col-xs-12 col-md-5 col-md-offset-7">
+
+            <table class="table hoverTable text-center">
+              <thead>
+                <tr>
+                  <td>Base de Calculo</td>
+                  <td>&nbsp;&nbsp;</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> Costo de Cobertura</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td> Total Pagos</td>
+                  <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                  <td> Diferencia</td>
+                  <td>&nbsp; &nbsp;</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>

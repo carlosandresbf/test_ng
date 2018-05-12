@@ -1,0 +1,477 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Forumulario
+      <small>{{modulo}}</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/admin']">
+          <i class="fa fa-dashboard"></i> Inicio</a>
+      </li>
+
+      <li class="active">
+        <a [routerLink]="['admin/contratos/automaticos/proporcionales/cuota-aparte/detalle']">{{modulo}}</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title">
+              {{modulo}}
+            </h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="table-responsive">
+
+
+
+              <div class="content">
+                <form id="formAng">
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Corredor</label>
+                        <select class="form-control">
+                          <option>Sin broker</option>
+                        </select>
+                      </div>
+                    </div>
+                  
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Reasegurador</label>
+                        <select class="form-control">
+                          <option>Selección</option>
+                        </select>
+                      </div>
+                    </div>
+                    </div>
+
+                    <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">% Participación</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="%  Participación" >
+                      </div>
+                    </div>
+
+                      <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                          <label for="inputEmail4">% Comisión</label>
+                          <input type="text" class="form-control" id="inputEmail4" placeholder="%  Participación" data-toggle="modal" data-target="#myModal">
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">Depósitos Retenidos</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Depósitos Retenidos" data-toggle="modal" data-target="#myModal2">
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">% de Comisión Utilidades</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="% de Comisión Utilidades">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                      <div class="form-group">
+                        <label for="inputEmail4">% de Gastos Aseguradora</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="% de Gastos Aseguradora">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                      <div class="form-group">
+                        <label for="inputEmail4">% de Impuesto sobre Primas cedidas</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="% de Impuesto sobre Primas cedidas">
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                      <div class="form-group">
+                        <label for="inputEmail4">% de Impuesto Renta</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="% de Impuesto Renta">
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="row">
+                          <div class="col-xs-12 col-md-6">
+                            <div class="form-group">
+                              <label for="inputEmail4">Traspaso de Cartera</label>
+                              <input type="text" class="form-control" id="inputEmail4" placeholder="Traspaso"  data-toggle="modal" data-target="#myModal3">
+                            </div>
+                          </div>
+                    
+                      <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                          <label for="inputEmail4">Arrastre de perdidas</label>
+                          <input type="text" class="form-control" id="inputEmail4" placeholder="Arrastre de perdidas">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                          <label for="inputEmail4">Cuentas</label>
+                          <select  class="form-control" name="" id="">
+                            <option value="">Mensual</option>
+                              <option value="">Trimestral</option>
+                                <option value="">Semanal</option>
+                                  <option value="">Anual</option>
+                          </select>
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                 
+                    <button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="if(confirm('Desea salir sin guardar los cambios?')){history.go(-1);}else{return false;}">
+                      Regresar
+                      <i class="favb fa fa-circle"></i>
+                    </button>
+                <button type="button" class="btn btn-info margin-left btn-md shadow-box-item"  onclick="if(confirm('Desea guardar los cambios realizados?')){history.go(-1);}else{return false;}" >
+                  Guardar
+                  <i class="favb fa fa-circle">
+                  </i>
+                </button>
+                
+                <button type="button" class="btn btn-info margin-left btn-md shadow-box-item"  onclick="if(confirm('Desea guardar y crear una nueva nomina?')){document.getElementById('formAng').reset();}else{return false;}" >
+                  Agregar
+                  <i class="favb fa fa-circle">
+                  </i>
+                </button>
+                
+                <button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+                  Cancelar
+                  <i class="favb fa fa-circle"></i>
+                </button>
+
+                </form>
+              </div>
+
+
+
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+  </section>
+
+
+  <!-- /.content -->
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel">Comisión</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row">
+          <div class="col-xs-12 col-md-4 text-center">
+            <div class="form-group">
+              <button type="button" class="btn btn-primary semi-full-width" onclick="$('.row-provisional').hide(); $('.row-escalonada').hide(); " >Fija</button>              
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 text-center">
+            <div class="form-group">
+             <button type="button" class="btn btn-primary semi-full-width" onclick="$('.row-provisional').show(); $('.row-escalonada').hide(); " >Provisional</button>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 text-center">
+            <div class="form-group">
+            <button type="button" class="btn btn-primary semi-full-width" onclick="$('.row-provisional').hide(); $('.row-escalonada').show(); " >Escalonada</button>          
+            </div>
+          </div>
+        </div>
+
+          <div class="row " >
+            <div class="col-xs-12 ">
+              <div class="form-group">
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Fija ">
+              </div>
+            </div>
+          </div>
+          <div class="row row-provisional" style="display:none;">
+            <div class="col-xs-12">
+
+              <table class="table hoverTable text-center">
+              <thead>
+                <tr>
+                  <th colspan="4">PROVISIONAL</th>
+                </tr>
+                <tr>
+                  <th colspan="2">SOBRE COMISIÓN</th>
+                  <th colspan="2">SINIESTRALIDAD</th>
+                </tr>
+                <tr>
+                  <th>MAX</th>
+                  <th>MIN</th>
+                  <th>MAX</th>
+                  <th>MIN</th>
+                </tr>
+                </thead>
+
+               <tbody>
+                <tr>
+                  <td>
+                    <input class="input-phantom">
+                  </td>
+                  <td><input class="input-phantom"></td>
+                  <td>
+                    <input class="input-phantom">
+                  </td>
+                  <td>
+                    <input class="input-phantom">
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+
+            </div>
+          </div>
+
+        <div class="row row-escalonada"  style="display:none;">
+          <div class="col-xs-12">
+        
+            <table class="table hoverTable text-center">
+              <thead>
+                <tr>
+                  <th colspan="2">ESCALONADA</th>
+                </tr>
+                <tr>
+                  <th >% Com</th>
+                  <th >% Sin</th>
+                </tr>
+              </thead>
+               <tbody>
+                <tr>
+                  <td>
+                    <input class="input-phantom">
+                  </td>
+                <td>
+                  <input class="input-phantom">
+                </td>
+                </tr>
+              </tbody>
+            </table>
+        
+        
+          </div>
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel2">Depósito Retenido</h4>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Moneda </label>
+                <select class="form-control">
+                  <option selected>Selección</option>
+                  <option>Dolar</option>
+                  <option>Peso</option>
+                  <option>Euro</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="inputEmail4">Periodo de Retención de Depósitos</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Periodo de Retención de Depósitos">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="inputEmail4">Meses</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Meses">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Porcentaje de Retención de Depósitos</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Porcentaje de Retención de Depósitos">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Porcentaje intereses sobre liberación de depósitos</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Porcentaje intereses sobre liberación de depósitos">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <div class="checkbox">
+                  <label>
+                    <input class="bold-me" type="checkbox" value="">Reserva Asumida</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel3">Traspaso de Cartera</h4>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <div class="radio">
+              <label class=" bold-me">
+                <input type="radio" name="optradio">Primas</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <div class="radio  ">
+                <label class=" bold-me">
+                  <input type="radio" name="optradio">Siniestros</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <div class="radio">
+                <label  class=" bold-me">
+                  <input type="radio" name="optradio">Depósitos</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <div class="radio">
+                <label  class=" bold-me">
+                  <input type="radio" name="optradio">Primas, Siniestros</label>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <div class="radio">
+              <label class=" bold-me">
+                <input type="radio"  name="optradio">Sin traspaso</label>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Cuentas</label>
+                <select class="form-control">
+                  <option selected>Sistema</option>
+                  <option>Medios</option>
+                  <option>Octavos</option>
+                  <option>Venticuatroavos</option>
+                  <option>Porcentaje</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>

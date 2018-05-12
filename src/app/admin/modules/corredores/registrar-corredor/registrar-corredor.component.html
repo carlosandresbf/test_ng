@@ -1,0 +1,331 @@
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <h1>
+      Formulario
+      <small>{{modulo}}</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li>
+        <a [routerLink]="['/admin']">
+          <i class="fa fa-dashboard"></i> Inicio</a>
+      </li>
+
+      <li class="active">
+        <a [routerLink]="['/admin/companiasreaseguradoras/registrarcorredor']">{{modulo}}</a>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- Main content -->
+  <section class="content">
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="box box-info">
+          <div class="box-header with-border">
+            <h3 class="box-title">
+              Registrar Corredor
+            </h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+            <div class="table-responsive">
+
+
+             
+    <div class="content">       
+<form>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label for="inputEmail4">Entidad</label>
+      <select class="form-control">
+        <option>Generales</option>
+        <option>Vida</option>
+      </select>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label for="inputEmail4">Cod. Corredor</label>
+        <input type="text" class="form-control" id="inputEmail4" placeholder="Codigo Corredor">
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+    <div class="form-group">
+      <label for="inputEmail4">Razon Social</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Razon Social">
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <div class="form-group">
+      <label for="inputEmail4">Nombre Abreviado</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre Abreviado">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+    <div class="form-group">
+      <label for="inputEmail4">NIT</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Nit">
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <div class="form-group">
+      <label for="inputEmail4">Telefono</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Telefono">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+    <div class="form-group">
+      <label for="inputEmail4">Direccion</label>
+      <input type="text" class="form-control" id="inputEmail4" placeholder="Direccion">
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label for="inputEmail4">Contacto</label>
+        <input type="text" class="form-control" id="inputEmail4" placeholder="Contacto">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label for="inputEmail4">Pais Origen</label>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </div>
+<div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label for="inputEmail4">Estado</label>
+        <select class="form-control">
+          <option>Activo</option>
+          <option>Inactivo</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-xs-12 col-md-6">
+      <div class="form-group">
+        <label for="inputEmail4">Region</label>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+<button type="button" class="btn btn-alert btn-md shadow-box-item" onclick="history.go(-1);">
+  Regresar
+  <i class="favb fa fa-circle"></i>
+</button>
+<button type="submit" class="btn btn-info margin-left btn-md shadow-box-item">
+  Modificar Compa&ntilde;ia <i class="favb fa fa-circle">
+  </i></button>
+
+<button type="button" class="btn btn-info margin-left btn-md shadow-box-item" data-toggle="modal" data-target="#myModal" >
+  Datos Bancarios <i class="favb fa fa-circle">
+  </i></button>
+ 
+<button type="button" class="btn btn-info margin-left btn-md shadow-box-item" data-toggle="modal" data-target="#myModal2">
+Agregar Contacto  <i class="favb fa fa-circle">
+  </i>
+</button>
+
+</form>
+</div>   
+
+
+
+            </div>
+            <!-- /.table-responsive -->
+          </div>
+          <!-- /.box-body -->
+
+          <!-- /.box-footer -->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+    </div>
+
+  </section>
+
+  <!-- Modal -->
+
+  <!-- /.content -->
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel">Datos Bancarios</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Titular / Owner </label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Titular / Owner">
+              </div>
+            </div>
+          </div>
+         <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="inputEmail4">Número de cuenta / Account Number</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Número de cuenta / Account Number">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Moneda / Currency</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Moneda / Currency">
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">ABA / SWIFT</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="ABA / SWIFT">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Banco / Bank </label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Banco / Bank">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Pais / Country</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Pais / Country">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Ciudad / City</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Ciudad / City">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Certificación / Certification</label>
+                <input type="file" class="form-control" id="inputEmail4" placeholder="Certificación">
+              </div>
+            </div>
+          </div>
+          </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content ">
+      <div class="modal-header  box box-info">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title font-header" id="myModalLabel">Agregar Contacto</h4>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Nombre Contacto</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre Contacto">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="inputEmail4">Dirección</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Dirección">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Teléfono</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Teléfono">
+              </div>
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-xs-12 ">
+              <div class="form-group">
+                <label for="inputEmail4">Pais</label>
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Pais">
+              </div>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
